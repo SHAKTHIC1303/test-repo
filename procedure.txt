@@ -1,0 +1,54 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+Loading personal and system profiles took 586ms.
+(base) PS D:\git> git init
+Initialized empty Git repository in D:/git/.git/
+(base) PS D:\git> git clone https://github.com/SHAKTHIC1303/test-repo.git
+Cloning into 'test-repo'...
+warning: You appear to have cloned an empty repository.
+(base) PS D:\git> git add test.txt
+fatal: pathspec 'test.txt' did not match any files
+(base) PS D:\git> git add test.txt
+(base) PS D:\git> git commit -m "test changes"
+[master (root-commit) f74ac21] test changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+(base) PS D:\git> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(base) PS D:\git> cd test-repo
+(base) PS D:\git\test-repo> add test.txt
+add : The term 'add' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ add test.txt
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(base) PS D:\git\test-repo> git add test.txt
+fatal: pathspec 'test.txt' did not match any files
+(base) PS D:\git\test-repo> git add test.txt
+(base) PS D:\git\test-repo> git commit -m "test changes"
+[main (root-commit) a2258c7] test changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+(base) PS D:\git\test-repo> git push
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 209 bytes | 209.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SHAKTHIC1303/test-repo.git
+ * [new branch]      main -> main
+(base) PS D:\git\test-repo>
